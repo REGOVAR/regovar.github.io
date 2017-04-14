@@ -28,10 +28,15 @@
 </head>
 
 <body id="page-top" class="index">
+
+    <div style="position: fixed; top:0; left:0; right:0; height: 75px; box-shadow: 0 5px 5px rgba(0,0,0,0.33); z-index: 1000; overflow: hidden;">
+        <img class="img-responsive" src="../theme/footer.svg" alt="" style="position: absolute; bottom: 0;">
+    </div>
+    
     <div id="skipnav"><a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#maincontent">Skip to main content</a></div>
 
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background: none;">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background: none;  z-index: 1500;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -50,13 +55,13 @@
                         <a href="#presentation">Présentation</a>
                     </li>
                     <li>
-                        <a href="#snapshots">Captures d'écran</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#documentation">Documentation</a>
+                        <a href="#project">Le projet</a>
                     </li>
                     <li>
-                        <a href="#source">Source</a>
+                        <a href="#communauty">Communauté</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -69,11 +74,10 @@
     </nav>
 
     <!-- Header -->
-    <header style="background: none;">
-        <img class="img-responsive" src="../theme/bg.svg" alt="" style="box-shadow: 0 5px 5px rgba(0,0,0,0.33)">
-        <img src="../theme/regovar-title.svg" alt="" style="position:absolute; width:25%; top:10%; left:10%">
-        
+    <header style="background: none; z-index: 1250; position: absolute;">
+        <img id="banner_img" class="img-responsive" src="../theme/banner.svg" alt="" style="box-shadow: 0 5px 5px rgba(0,0,0,0.33); ">
     </header>
+    <div id="start_offset" style="height: 300px;"></div>
 
     <section id="actuality">
         <div class="container">
@@ -107,8 +111,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+                    <h2>Présentation</h2>
+                    <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
@@ -127,7 +131,7 @@
         </div>
     </section>
 
-    <section id="snapshots">
+    <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -200,49 +204,44 @@
         </div>
     </section>
 
-    <section id="documentation" class="success">
+    <section id="project" class="success">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>Le projet</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p>Read the doc</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p>Github</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
+                        <i class="fa fa-download"></i> Download Installer en fonction de l'OS
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="source">
+    <section id="communauty">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+                    <h2>Communauté</h2>
+                    <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p>Open source project</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
+                    <p>Pipeline HUB</p>
                 </div>
             </div>
         </div>
@@ -252,7 +251,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2>Contacter l'équipe</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -311,7 +310,7 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p>3481 Melrose Place
+                        <p>Somewhere in the universe
                             <br>Beverly Hills, CA 90210</p>
                     </div>
                     <div class="footer-col col-md-4">
@@ -335,8 +334,8 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.</p>
+                        <h3>About Regovar</h3>
+                        <p>This template is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.</p>
                     </div>
                 </div>
             </div>
@@ -345,7 +344,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright © Your Website 2016
+                        Copyright © Regovar 2016
                     </div>
                 </div>
             </div>
@@ -599,7 +598,14 @@
     <!-- Theme JavaScript -->
     <script src="../theme/js/freelancer.min.js"></script>
 
+    <script type="text/javascript">
+        $('#start_offset').height($('#banner_img').height() - 10);
+        $(window).on('resize', function(){
+            $('#start_offset').height($('#banner_img').height() - 10);
+        });
 
+
+    </script>
 
 
 </body></html>
