@@ -28,10 +28,11 @@
 </head>
 
 <body id="page-top" class="index">
+    
     <div id="skipnav"><a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#maincontent">Skip to main content</a></div>
 
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background: none;">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -44,22 +45,29 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#actuality">Actualité</a>
+                        <a href="#actuality">News</a>
                     </li>
                     <li>
-                        <a href="#presentation">Présentation</a>
+                        <a href="#presentation">Presentation</a>
                     </li>
                     <li>
-                        <a href="#snapshots">Captures d'écran</a>
+                        <a href="#portfolio">Guided tour</a>
                     </li>
                     <li>
-                        <a href="#documentation">Documentation</a>
-                    </li>
-                    <li>
-                        <a href="#source">Source</a>
+                        <a href="#project">The project</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" style="background: none; color: #fff; margin-top: 6px;" type="button" id="menu1" data-toggle="dropdown">
+                                <img src="../theme/en.png" height="20px"/> EN
+                                <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li role="presentation"><a role="menuitem" href="../fr/index.html"><img src="../theme/fr.png" height="20px"/>  Français</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -69,10 +77,12 @@
     </nav>
 
     <!-- Header -->
-    <header style="background: none;">
-        <img class="img-responsive" src="../theme/bg.svg" alt="" style="box-shadow: 0 5px 5px rgba(0,0,0,0.33)">
-        <img src="../theme/regovar-title.svg" alt="" style="position:absolute; width:25%; top:10%; left:10%">
-        
+    <header style="position: relative">
+        <img id="banner_img" class="img-responsive" src="../theme/banner.svg" alt="" style="box-shadow: 0 5px 5px rgba(0,0,0,0.33);"/>
+        <p style="font-size: 30px; font-style: italic; position: absolute; right: 50px; bottom: 50px; margin: 0;">
+            <i class="fa fa-quote-left" aria-hidden="true" style="color: rgba(255,255,255,0.75); font-size: 20px"></i>
+            Free and open-source NGS analysis
+            <i class="fa fa-quote-right" aria-hidden="true" style="color: rgba(255,255,255,0.75); font-size: 20px"></i></p>
     </header>
 
     <section id="actuality">
@@ -85,21 +95,26 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <h3>3-6 juillet : Jobim à Lille</h3>
-                    <p>L'équipe Regovar à soumis sa candidature pour exposer et présenter le projet lors des Journées Ouvertes en Biologie, Informatique et Mathématiques (<a href="https://project.inria.fr/jobim2017/fr/" target="_blanck" alt="Site officielle">JOBIM</a>) qui se tiendront à Lille
-                    du 3 au 7 juillet 2017.</p>
+                    <img title="JOBIM2017" src="https://project.inria.fr/jobim2017/files/2016/06/logo_V31.png"/>
                 </div>
                 <div class="col-lg-4">
                     <h3>3-6 juillet : Jobim à Lille</h3>
-                    <p>L'équipe Regovar à soumis sa candidature pour exposer et présenter le projet lors des Journées Ouvertes en Biologie, Informatique et Mathématiques (<a href="https://project.inria.fr/jobim2017/fr/" target="_blanck" alt="Site officielle">JOBIM</a>) qui se tiendront à Lille
-                    du 3 au 7 juillet 2017.</p>
+                    <p>L'équipe Regovar présente le projet lors des Journées Ouvertes en Biologie, Informatique et Mathématiques (<a href="https://project.inria.fr/jobim2017/fr/" target="_blanck" alt="Site officielle">JOBIM</a>) qui se tiendront à Lille du 3 au 7 juillet 2017.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h3>14-15 septembre : Séminaire de Génétique de l'Ouest</h3>
+                    <p>Le thème scientifique de la première journée sera "Déficience intellectuelle et autisme, apport des nouvelles technologies" et sera coordonné par Brigitte Gilbert-Dussardier.
+La deuxième journée sera plus consacrée à des communications libres et à la vie de nos réseaux GEM-HUGO et Epidémiologie génétique (coordonné par Emmanuelle Genin).</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Read all news
                     </a>
                 </div>
             </div>
+                    
         </div>
     </section>
 
@@ -107,31 +122,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+                    <h2>Présentation</h2>
+                    <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p>REGOVAR est un projet collaboratif, libre et ouvert de logiciel d’analyse de données de séquençage haut débit pour les panels de gènes, l’exome et le génome (DPNI, recherche de SNV, CNV, SV...). Il vise à impliquer et fédérer les différentes communautés concernées (généticiens cliniciens, biologistes et bioinformaticiens), sans limites institutionnelles ou géographiques. Il se base exclusivement sur des technologies et des logiciels libres et gratuits, éliminant ainsi toute contrainte contractuelle et budgétaire.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
+                    <p>REGOVAR est un logiciel permettant le traitement de données génétiques, depuis la récupération des fichiers produits par les séquenceurs, quelle qu’en soit la technologie, jusqu’à la génération de rapports illustrés et de comptes-rendus d’analyse en passant par les contrôles de qualité, la détection, l’annotation, le filtrage, la priorisation et la visualisation de variants.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="snapshots">
+    <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>Visite guidée</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -143,7 +153,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/cabin.png" class="img-responsive" alt="Cabin">
+                        <img src="img/postit-01.jpg" class="img-responsive" alt="Game controller">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -153,7 +163,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/cake.png" class="img-responsive" alt="Slice of cake">
+                        <img src="img/postit-02.jpg" class="img-responsive" alt="Pirus module">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -163,7 +173,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/circus.png" class="img-responsive" alt="Circus tent">
+                        <img src="img/postit-03.jpg" class="img-responsive" alt="Circus tent">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -173,7 +183,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/game.png" class="img-responsive" alt="Game controller">
+                        <img src="img/postit-04.jpg" class="img-responsive" alt="Submarine">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -183,7 +193,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/safe.png" class="img-responsive" alt="Safe">
+                        <img src="img/postit-05.jpg" class="img-responsive" alt="Safe">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -193,99 +203,98 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/submarine.png" class="img-responsive" alt="Submarine">
+                        <img src="img/postit-06.jpg" class="img-responsive" alt="Submarine">
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="documentation" class="success">
+    <section id="project" class="success">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>Le projet</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <h3>Documentation</h3>
+                    <ul><li><a href="http://regovar.readthedocs.io/fr/latest/" target="_blank" style="color: #fff">Présentation</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Premiers pas...</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Guide de l'utilisateur</a></li>
+                    </ul>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
+                    <h3>Développement</h3>
+                    <ul><li><a href="https://github.com/REGOVAR/Regovar" target="_blank" style="color: #fff">Github (sources)</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Gitter (chat)</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Guide du développeur</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">API Rest</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <h3>Tutoriels</h3>
+                    <ul><li><a href="" target="_blank" style="color: #fff">Création d'un pipeline (DPNI) avec LXD</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Création d'un pipeline (DPNI) avec Docker (à venir)</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3>&nbsp;</h3>
+                    <ul><li><a href="" target="_blank" style="color: #fff">Filtrage dynamique Trio (à venir)</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <a href="" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Télécharger Regovar Serveur
+                    </a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Télécharger Regovar Client
+                    </a>
+                </div>
+            </div>-->
         </div>
     </section>
 
-    <section id="source">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2>Contacter l'équipe</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate="">
+                    <form name="sentMessage" id="contactForm" novalidate="" method="post" action="mailto:olivier@labsquare.org">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name.">
+                                <label for="name">Nom</label>
+                                <input type="text" class="form-control" placeholder="Nom" id="name" required="" data-validation-required-message="Merci d'entrer votre nom.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="email">Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                <label for="email">Adresse email</label>
+                                <input type="email" class="form-control" placeholder="Adresse email" id="email" required="" data-validation-required-message="Merci d'entrer une adresse email valide afin qu'on puisse vous répondre.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="message">Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Votre message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -293,7 +302,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
                             </div>
                         </div>
                     </form>
@@ -310,33 +319,18 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
+                        <p>
+                            <a href="http://www.girci-go.org/GIRCI_GO/membres.html" target="_blank"><img src="../theme/logo_girci.png" width="360px" /></a>
+                        </p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
+                        <h3>Regovar</h3>
+                        <p>Projet DHRCI libre et open-source financé par le GIRCI Grand-Ouest.</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.</p>
+                        <p>
+                            <a href="http://www.girci-go.org/GIRCI_GO/membres.html" target="_blank"><img src="../theme/logo_hugo.png" width="360px" /></a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -345,7 +339,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright © Your Website 2016
+                        Powered by Regovar 2016
                     </div>
                 </div>
             </div>
@@ -372,24 +366,19 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Le projet REGOVAR</h2>
                             <hr class="star-primary">
-                            <img src="img/theme/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com/">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com/">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com/">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/postit-01.jpg" class="img-responsive img-centered" alt="">
+                            <dl>
+                                <dt>REGOVAR</dt>
+                                <ll>Réseau Grand Ouest pour l'interprétation des Variants Génétique Rares</ll>
+                                <dt>PHRCI Grand-Ouest 2015</dt>
+                                <ll>Financement à hauteur de 153 660,67 € (sur 163 660,67€ demandés)</ll>
+                                <dt>Localisation</dt>
+                                <ll>Equipe projet basé au CHU d'Angers</ll>
+                                <dt>Partenaires</dt>
+                                <ll>CHU de l'inter-région Grand-Ouest : Angers, Brest, Nantes, Poitiers, Rennes, Tours</ll>
+                            </dl>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -409,24 +398,19 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Objectifs</h2>
                             <hr class="star-primary">
-                            <img src="img/theme/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com/">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com/">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com/">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/postit-02.jpg" class="img-responsive img-centered" alt="">
+                            <dl>
+                                <dt>Projet collaboratif</dt>
+                                <ll>Réseau Grand Ouest pour l'interprétation des Variants Génétique Rares</ll>
+                                <dt>PHRCI Grand-Ouest 2015</dt>
+                                <ll>Financement à hauteur de 153 660,67 € (sur 163 660,67€ demandés)</ll>
+                                <dt>Localisation</dt>
+                                <ll>Equipe projet basé au CHU d'Angers</ll>
+                                <dt>Partenaires</dt>
+                                <ll>CHU de l'inter-région Grand-Ouest : Angers, Brest, Nantes, Poitiers, Rennes, Tours</ll>
+                            </dl>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -599,7 +583,14 @@
     <!-- Theme JavaScript -->
     <script src="../theme/js/freelancer.min.js"></script>
 
+    <script type="text/javascript">
+        $('#start_offset').height($('#banner_img').height() - 10);
+        $(window).on('resize', function(){
+            $('#start_offset').height($('#banner_img').height() - 10);
+        });
 
+
+    </script>
 
 
 </body></html>

@@ -28,15 +28,11 @@
 </head>
 
 <body id="page-top" class="index">
-
-    <div style="position: fixed; top:0; left:0; right:0; height: 75px; box-shadow: 0 5px 5px rgba(0,0,0,0.33); z-index: 1000; overflow: hidden;">
-        <img class="img-responsive" src="../theme/footer.svg" alt="" style="position: absolute; bottom: 0;">
-    </div>
     
     <div id="skipnav"><a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#maincontent">Skip to main content</a></div>
 
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background: none;  z-index: 1500;">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -61,10 +57,17 @@
                         <a href="#project">Le projet</a>
                     </li>
                     <li>
-                        <a href="#communauty">Communauté</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" style="background: none; color: #fff; margin-top: 6px;" type="button" id="menu1" data-toggle="dropdown">
+                                <img src="../theme/fr.png" height="20px"/> FR
+                                <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li role="presentation"><a role="menuitem" href="../en/index.html"><img src="../theme/en.png" height="20px"/>  English</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -74,14 +77,13 @@
     </nav>
 
     <!-- Header -->
-    <header style="background: none; z-index: 1250; position: absolute;">
-        <img id="banner_img" class="img-responsive" src="../theme/banner.svg" alt="" style="box-shadow: 0 5px 5px rgba(0,0,0,0.33); margin-top:-100px; "/>
-        <p style="position: absolute; right: 100px; bottom: 5%; color: #fff; font-size: 30px; font-weight: bold; font-style: italic">
+    <header style="position: relative">
+        <img id="banner_img" class="img-responsive" src="../theme/banner.svg" alt="" style="box-shadow: 0 5px 5px rgba(0,0,0,0.33);"/>
+        <p style="font-size: 30px; font-style: italic; position: absolute; right: 50px; bottom: 50px; margin: 0;">
             <i class="fa fa-quote-left" aria-hidden="true" style="color: rgba(255,255,255,0.75); font-size: 20px"></i>
-            L'analyse de variant libre et open-source
+            L'analyse NGS libre et open-source
             <i class="fa fa-quote-right" aria-hidden="true" style="color: rgba(255,255,255,0.75); font-size: 20px"></i></p>
     </header>
-    <div id="start_offset" style="height: 300px;"></div>
 
     <section id="actuality">
         <div class="container">
@@ -97,8 +99,7 @@
                 </div>
                 <div class="col-lg-4">
                     <h3>3-6 juillet : Jobim à Lille</h3>
-                    <p>L'équipe Regovar à soumis sa candidature pour exposer et présenter le projet lors des Journées Ouvertes en Biologie, Informatique et Mathématiques (<a href="https://project.inria.fr/jobim2017/fr/" target="_blanck" alt="Site officielle">JOBIM</a>) qui se tiendront à Lille
-                    du 3 au 7 juillet 2017.</p>
+                    <p>L'équipe Regovar présente le projet lors des Journées Ouvertes en Biologie, Informatique et Mathématiques (<a href="https://project.inria.fr/jobim2017/fr/" target="_blanck" alt="Site officielle">JOBIM</a>) qui se tiendront à Lille du 3 au 7 juillet 2017.</p>
                 </div>
             </div>
             <div class="row">
@@ -127,15 +128,10 @@ La deuxième journée sera plus consacrée à des communications libres et à la
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>REGOVAR est un projet collaboratif, libre et ouvert de logiciel d’analyse de données de séquençage haut débit pour les panels de gènes, l’exome et le génome (DPNI, recherche de SNV, CNV, SV...). Il vise à impliquer et fédérer les différentes communautés concernées (généticiens cliniciens, biologistes et bioinformaticiens), sans limites institutionnelles ou géographiques. Il se base exclusivement sur des technologies et des logiciels libres et gratuits, éliminant toute contrainte contractuelle et budgétaire.</p>
+                    <p>REGOVAR est un projet collaboratif, libre et ouvert de logiciel d’analyse de données de séquençage haut débit pour les panels de gènes, l’exome et le génome (DPNI, recherche de SNV, CNV, SV...). Il vise à impliquer et fédérer les différentes communautés concernées (généticiens cliniciens, biologistes et bioinformaticiens), sans limites institutionnelles ou géographiques. Il se base exclusivement sur des technologies et des logiciels libres et gratuits, éliminant ainsi toute contrainte contractuelle et budgétaire.</p>
                 </div>
                 <div class="col-lg-4">
                     <p>REGOVAR est un logiciel permettant le traitement de données génétiques, depuis la récupération des fichiers produits par les séquenceurs, quelle qu’en soit la technologie, jusqu’à la génération de rapports illustrés et de comptes-rendus d’analyse en passant par les contrôles de qualité, la détection, l’annotation, le filtrage, la priorisation et la visualisation de variants.</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
                 </div>
             </div>
         </div>
@@ -224,38 +220,51 @@ La deuxième journée sera plus consacrée à des communications libres et à la
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Read the doc</p>
+                    <h3>Documentation</h3>
+                    <ul><li><a href="http://regovar.readthedocs.io/fr/latest/" target="_blank" style="color: #fff">Présentation</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Premiers pas...</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Guide de l'utilisateur</a></li>
+                    </ul>
                 </div>
                 <div class="col-lg-4">
-                    <p>Github</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Installer en fonction de l'OS
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="communauty">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Communauté</h2>
-                    <hr class="star-primary">
+                    <h3>Développement</h3>
+                    <ul><li><a href="https://github.com/REGOVAR/Regovar" target="_blank" style="color: #fff">Github (sources)</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Gitter (chat)</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Guide du développeur</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">API Rest</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Open source project</p>
+                    <h3>Tutoriels bio-info</h3>
+                    <ul><li><a href="" target="_blank" style="color: #fff">Création d'un pipeline (DPNI) avec LXD</a></li>
+                        <li><a href="" target="_blank" style="color: #fff">Création d'un pipeline (DPNI) avec Docker (à venir)</a></li>
+                    </ul>
                 </div>
                 <div class="col-lg-4">
-                    <p>Pipeline HUB</p>
+                    <h3>Tutoriels utilisateur</h3>
+                    <ul><li><a href="" target="_blank" style="color: #fff">Filtrage dynamique Trio (à venir)</a></li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
+            <!--
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <a href="" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Télécharger Regovar Serveur
+                    </a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Télécharger Regovar Client
+                    </a>
+                </div>
+            </div>-->
         </div>
     </section>
+
 
     <section id="contact">
         <div class="container">
@@ -267,34 +276,25 @@ La deuxième journée sera plus consacrée à des communications libres et à la
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate="">
+                    <form name="sentMessage" id="contactForm" novalidate="" method="post" action="mailto:olivier@labsquare.org">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name.">
+                                <label for="name">Nom</label>
+                                <input type="text" class="form-control" placeholder="Nom" id="name" required="" data-validation-required-message="Merci d'entrer votre nom.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="email">Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                <label for="email">Adresse email</label>
+                                <input type="email" class="form-control" placeholder="Adresse email" id="email" required="" data-validation-required-message="Merci d'entrer une adresse email valide afin qu'on puisse vous répondre.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="message">Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Votre message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -302,7 +302,7 @@ La deuxième journée sera plus consacrée à des communications libres et à la
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
                             </div>
                         </div>
                     </form>
@@ -319,33 +319,18 @@ La deuxième journée sera plus consacrée à des communications libres et à la
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Somewhere in the universe
-                            <br>Beverly Hills, CA 90210</p>
+                        <p>
+                            <a href="http://www.girci-go.org/GIRCI_GO/membres.html" target="_blank"><img src="../theme/logo_girci.png" width="360px" /></a>
+                        </p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://blackrockdigital.github.io/startbootstrap-freelancer/#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
+                        <h3>Regovar</h3>
+                        <p>Projet PHRCI libre et open-source financé par le GIRCI Grand-Ouest.</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Regovar</h3>
-                        <p>This template is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.</p>
+                        <p>
+                            <a href="http://www.girci-go.org/GIRCI_GO/membres.html" target="_blank"><img src="../theme/logo_hugo.png" width="360px" /></a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -354,7 +339,7 @@ La deuxième journée sera plus consacrée à des communications libres et à la
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright © Regovar 2016
+                        Produit par Regovar 2016
                     </div>
                 </div>
             </div>
