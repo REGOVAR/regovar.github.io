@@ -394,7 +394,7 @@ footer h3
 footer .footer-above
 {
 	padding-top:50px;
-	background-color:#364c63; /*#2C3E50*/
+	background-color:#2C3E50
 }
 
 footer .footer-col
@@ -407,6 +407,31 @@ footer .footer-below
 	padding:25px 0;
 	background-color:#233140
 }
+
+a.girci_logo span, a.hugo_logo span {
+    display: none;
+}
+a.girci_logo {
+    display: block;
+    width: 360px;
+    height: 141px;
+    background-image: url('../logo_girci_w360.png');
+    background-position: 0 0;
+}
+a.girci_logo:hover {
+    background-position: 0 -141px;
+}
+a.hugo_logo {
+    display: block;
+    width: 360px;
+    height: 141px;
+    background-image: url('../logo_hugo_w360.png');
+    background-position: 0 0;
+}
+a.hugo_logo:hover {
+    background-position: 0 -141px;
+}
+
 
 .btn-outline
 {
