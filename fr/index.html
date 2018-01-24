@@ -28,7 +28,9 @@
 </head>
 
 <body id="page-top" class="index">
-    
+
+    <div id="skipnav"><a href="#news">Aller au contenu</a></div>
+
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
@@ -43,7 +45,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#actuality">Actualité</a>
+                        <a href="#news">Actualité</a>
                     </li>
                     <li>
                         <a href="#presentation">Présentation</a>
@@ -52,7 +54,7 @@
                         <a href="#portfolio">Visite guidée</a>
                     </li>
                     <li>
-                        <a href="#project">Le projet</a>
+                        <a href="#ressources">Ressources</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -83,7 +85,7 @@
             <i class="fa fa-quote-right" aria-hidden="true" style="color: rgba(255,255,255,0.75); font-size: 20px"></i></p>
     </header>
 
-    <section id="actuality">
+    <section id="news">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -251,11 +253,11 @@
         </div>
     </section>
 
-    <section id="project" class="success">
+    <section id="ressources" class="success">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Le projet</h2>
+                    <h2>Ressources</h2>
                     <hr class="star-light">
                 </div>
             </div>
@@ -263,46 +265,20 @@
                 <div class="col-lg-4 col-lg-offset-2">
                     <h3>Documentation</h3>
                     <ul><li><a href="https://regovar.readthedocs.io/fr/latest" style="color: #fff">Documentation principale</a></li>
-                        <li><a href="https://regovar.readthedocs.io/fr/latest/installation/server/" style="color: #fff">Installation du serveur</a></li>
-                        <li><a href="https://regovar.readthedocs.io/fr/latest/Guide%20utilisateur/01.%20Bienvenue" style="color: #fff">Guide de l'utilisateur</a></li>
+                        <li><a href="http://regovar.readthedocs.io/fr/latest/installation/server" style="color: #fff">Installation du serveur</a></li>
+                        <li><a href="http://regovar.readthedocs.io/fr/latest/installation/client" style="color: #fff">Installation du client</a></li>
+                        <li><a href="http://regovar.readthedocs.io/fr/latest/user/presentation/" style="color: #fff">Guide de l'utilisateur</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
                     <h3>Développement</h3>
-                    <ul><li><a href="https://github.com/REGOVAR/Regovar" style="color: #fff">Source du serveur (Github)</a></li>
-                        <li><a href="https://github.com/REGOVAR/QRegovar" style="color: #fff">Source du client (Github)</a></li>
+                    <ul><li><a href="https://github.com/REGOVAR/Regovar" style="color: #fff">Source du serveur (GitHub)</a></li>
+                        <li><a href="https://github.com/REGOVAR/QRegovar" style="color: #fff">Source du client (GitHub)</a></li>
                         <li><a href="https://regovar.readthedocs.io/fr/latest/developper/community/" style="color: #fff">Guide du développeur (serveur)</a></li>
-                        <li><a href="https://qregovar.readthedocs.io/fr/latest/" style="color: #fff">Documentation technique du client</a></li>
-                        <li><a href="http://test.regovar.org/api" style="color: #fff">API Rest</a></li>
+                        <li><a href="http://test.regovar.org/api" style="color: #fff">API REST</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <h3>Tutoriels bio-info</h3>
-                    <ul><li><a href="https://regovar.readthedocs.io/fr/latest/Tutoriels/Creer%20un%20pipeline%20avec%20LXD/" style="color: #fff">Création d'un pipeline (DPNI) avec LXD</a></li>
-                        <li><a href="" style="color: #fff">Création d'un pipeline (DPNI) avec Docker (à venir)</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Tutoriels utilisateur</h3>
-                    <ul><li><a href="" style="color: #fff">Filtrage dynamique d'un exome en trio (à venir)</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <a href="" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Télécharger Regovar Serveur
-                    </a>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <a href="" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Télécharger Regovar Client
-                    </a>
-                </div>
-            </div>-->
         </div>
     </section>
 
@@ -351,7 +327,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Produit par Regovar 2016
+                        Regovar team, 2014-2018
                     </div>
                 </div>
             </div>
@@ -360,7 +336,7 @@
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="https://blackrockdigital.github.io/startbootstrap-freelancer/#page-top">
+        <a class="btn btn-primary" href="#news">
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
@@ -651,7 +627,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- jQuery -->
     <script src="../theme/js/jquery.min.js"></script>
