@@ -9,29 +9,30 @@
     <meta name="viewport" content="width=480, user-scalable=yes">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Mono:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="theme/css/regovar.css">
-    <link rel="stylesheet" type="text/css" href="theme/juizy-slideshow/styles.css">
-<!--     <link rel="icon" href="/favicon.ico">
+    <!--<link rel="stylesheet" type="text/css" href="theme/juizy-slideshow/styles.css">
+    <link rel="icon" href="/favicon.ico">
     <link rel="icon" size="64x64" href="/favicon.ico">
     <link rel="icon" sizes="192x192" href="/images/icon.png">
     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/images/icon.png"> -->
     <script type="text/javascript">
-    var plat = 'windows'
-    if (/Mac OS X/.test(navigator.userAgent))
-        plat = 'osx'
-    else if (/Linux|FreeBSD/.test(navigator.userAgent))
-        plat = 'linux'
-    var arch = /WOW64|Win64|x86_64/.test(navigator.userAgent) ? '64' : '32'
-    document.documentElement.className += ' plat_' + plat + ' arch_' + arch
-    function byid(x)
-    {
-        return document.getElementById(x)
-    }
-    var scale = 1
-    function res()
-    {
-        scale = window.devicePixelRatio >= 1.3 && document.body.clientWidth > 1024 ? 2 : 1
-        return scale == 2 ? '@2x' : ''
-    }
+        var plat = 'windows'
+        if (/Mac OS X/.test(navigator.userAgent))
+            plat = 'osx'
+        else if (/Linux|FreeBSD/.test(navigator.userAgent))
+            plat = 'linux'
+        var arch = /WOW64|Win64|x86_64/.test(navigator.userAgent) ? '64' : '32'
+        document.documentElement.className += ' plat_' + plat + ' arch_' + arch
+        function byid(x)
+        {
+            return document.getElementById(x)
+        }
+        var scale = 1
+        function res()
+        {
+            scale = window.devicePixelRatio >= 1.3 && document.body.clientWidth > 1024 ? 2 : 1
+            return scale == 2 ? '@2x' : ''
+        }
+
     </script>
     <!--[if lt IE 9]>
     <script>
@@ -82,40 +83,46 @@ var height = 576
         <div class="changelog"><a href="/3">Changelog</a></div>
     </div>
     <section id="slideshow" class="slideshow">       
-        <div class="container">
-            <div class="c_slider"></div>
-            <div class="slider">
-                <figure>
-                    <img src="fr/img/slide-1.jpg" alt=""/>
-                    <figcaption>Page d'accueil</figcaption>
-                </figure><!--
-                --><figure>
-                    <img src="fr/img/slide-2.jpg" alt="" />
-                    <figcaption>Filtrer dynamiquement vos variants</figcaption>
-                </figure><!--
-                --><figure>
-                    <img src="fr/img/slide-3.jpg" alt="" />
-                    <figcaption>Moteur de recherche "omnicien"</figcaption>
-                </figure><!--
-                --><figure>
-                    <img src="fr/img/slide-4.jpg" alt="" />
-                    <figcaption>Surveiller l'état du serveur et de la base de donnée</figcaption>
-                </figure>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="fr/img/slide-1.jpg" style="width:100%">
+                <div class="text">Page d'accueil</div>
             </div>
-        </div>
-        
-        <span id="timeline"></span>
 
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="fr/img/slide-2.jpg" style="width:100%">
+                <div class="text">Filtrer dynamiquement vos variants</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="fr/img/slide-3.jpg" style="width:100%">
+                <div class="text">Moteur de recherche "omniscient"</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 3</div>
+                <img src="fr/img/slide-4.jpg" style="width:100%">
+                <div class="text">Surveiller l'état du serveur et de la base de donnée</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
     </section>
 </div>
 <main>
     <section class="screencast-meta">
-        <ul class="dots_commands">
-            <li><a title="Show slide 1" href="#sl_i1">Slide 1</a></li>
-            <li><a title="Show slide 2" href="#sl_i2">Slide 2</a></li>
-            <li><a title="Show slide 3" href="#sl_i3">Slide 3</a></li>
-            <li><a title="Show slide 4" href="#sl_i4">Slide 4</a></li>
-        </ul>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
         <div class="captions">
             <div id="caption1">
                 <b>Use <span class="feature">Multiple Selections</span> to rename variables quickly</b>
@@ -238,6 +245,15 @@ var height = 576
 </main>
     <footer>
         <section class="partners">
+            <img src="theme/logo_chu_angers.png" alt="CHU d'Angers" height="50px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_univ_Angers.png" alt="Université d'Angers " height="50px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHRU_Brest.jpg" alt="CHU de Brest" height="50px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Nancy.png" alt="CHU de Nancy" height="50px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Nantes.png" alt="CHU de Nantes" height="50px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Poitiers.jpg" alt="CHU de Poitiers" height="50px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Rennes.jpg" alt="CHU de Rennes" height="50px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Tours.jpg" alt="CHU de Tours" height="50px"/>
+
         </section>
         <section class="hugo">
             <div style="width: 1200px; margin:auto">
@@ -256,5 +272,59 @@ var height = 576
         logo_img.src = logo_img.src.replace('.svg', '.png')
     </script>
     <![endif]-->
+
+    <script type="text/javascript">
+        var slideIndex = 1;
+
+        // Next/previous controls
+        function plusSlides(n) 
+        {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) 
+        {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) 
+        {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) 
+            {
+                slides[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) 
+            {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+        }
+
+        function showSlides() 
+        {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) 
+            {
+                slides[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1} 
+            slides[slideIndex-1].style.display = "block"; 
+            setTimeout(showSlides, 10000);
+        }
+
+        //showSlides();
+        showSlides(0);
+
+
+    </script>
 </body>
 </html>
