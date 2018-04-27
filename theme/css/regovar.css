@@ -185,7 +185,7 @@ h4 code
 h3
 {
     font-size: 1.2em;
-    color: #777;
+    color: #29434e;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: normal;
@@ -237,7 +237,7 @@ div.primary > section
 
 header
 {
-    background-color: #233140; /*#4B4B4B;*/
+    background-color: #29434e; /*#233140; /*#4B4B4B;*/
     padding: 18px 0;
 }
 
@@ -254,17 +254,16 @@ header a#logo
 }
 header a#logo img
 {
-    width: 199px;
-    height: 22px;
+    height: 40px;
+    margin-top: -10px;
+
+    margin-bottom: -16px;
     display: block;
     border: none;
     transition: opacity 0.15s ease-in-out;
     -webkit-transition: opacity 0.15s ease-in-out;
 }
-header a#logo:hover img
-{
-    opacity: 0.8;
-}
+
 
 header nav
 {
@@ -284,7 +283,7 @@ header nav a
 
 header nav a:hover
 {
-    color: #ddd;
+    color: #42a5f5;
 }
 
 header nav a:first-child
@@ -571,7 +570,7 @@ div#masthead section div.tagline
 }
 div#masthead section div.tagline span
 {
-    padding: 0 10px 5px;
+    padding: 0 50px 5px;
     background-color: rgba(0, 0, 0, 0.1);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -702,7 +701,7 @@ div.download .button span
 div.download .button a
 {
     display: inline-block;
-    background-color: #888;
+    background-color: #29434e;
     color: #fff;
     border-radius: 3px;
     letter-spacing: 0.5px;
@@ -714,7 +713,7 @@ div.download .button a
 }
 div.download .button a:hover
 {
-    background-color: #777;
+    background-color: #42a5f5;
 }
 div.download .current_version,
 div.download .changelog
@@ -1657,6 +1656,7 @@ a.hugo_logo {
     height: 141px;
     background-image: url(../logo_hugo_w360.png);
     background-position: 0 0;
+    float: right;
 }
 a.hugo_logo:hover {
     background-position: 0 -141px;
@@ -1669,7 +1669,7 @@ section.partners
 {
     border-top: 1px solid #888a85;
     background: #fff;
-    height: 70px;
+    height: 90px;
     padding: 10px;
     text-align: center;
 
