@@ -1785,9 +1785,9 @@ section.hugo
 
 /* Fading animation */
 .fade {
-    -webkit-animation: fade 2s infinite;
-    -moz-animation: fade 2s infinite;
-    animation: fade 2s infinite;
+    -webkit-animation: fade 1s ;
+    -moz-animation: fade 1s ;
+    animation: fade 1s ;
 }
 
 @-webkit-keyframes fade {
