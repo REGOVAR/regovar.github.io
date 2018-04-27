@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=480, user-scalable=yes">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Mono:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="theme/css/regovar.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" size="64x64" href="favicon.ico">
@@ -83,28 +82,20 @@ var height = 576
     <section id="slideshow" class="slideshow">       
         <div class="slideshow-container">
             <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
+            <div class="mySlides">
                 <img src="fr/img/slide-1.jpg" style="width:100%">
-                <div class="text">Page d'accueil</div>
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
+            <div class="mySlides">
                 <img src="fr/img/slide-2.jpg" style="width:100%">
-                <div class="text">Filtrer dynamiquement vos variants</div>
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
+            <div class="mySlides">
                 <img src="fr/img/slide-3.jpg" style="width:100%">
-                <div class="text">Moteur de recherche "omniscient"</div>
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 3</div>
+            <div class="mySlides">
                 <img src="fr/img/slide-4.jpg" style="width:100%">
-                <div class="text">Surveiller l'état du serveur et de la base de donnée</div>
             </div>
 
             <!-- Next and previous buttons -->
@@ -122,25 +113,24 @@ var height = 576
             <span class="dot" onclick="currentSlide(4)"></span> 
         </div>
         <div class="captions">
-            <div id="caption1">
-                <b>Use <span class="feature">Multiple Selections</span> to rename variables quickly</b>
-                Here <span class="keys pc"><b>Ctrl</b><i>+</i><b>D</b></span><span class="keys mac"><b>⌘</b><i>+</i><b>D</b></span> is used to select the next occurrence of the current word.
-                Once created, each selection allows for full-featured editing.
+            <div class="myCaptions fade">
+                <b>Une interface <span class="feature">simple et moderne</span></b> qui permet de voir en un coup d'oeil les dernières analyses réalisées, ainsi que 
+                les dernières fiches patient modifiées. Une barre de recherche 
             </div>
 
-            <div id="caption2" style="display: none">
-                <b>Quickly jump to files and functions with <span class="feature">Goto Anything</span></b>
-                Here <span class="keys pc"><b>Ctrl</b><i>+</i><b>P</b></span><span class="keys mac"><b>⌘</b><i>+</i><b>P</b></span> is used to open the <span class="feature">Goto Anything</span> menu, <kbd>xcc</kbd> is used to select the file <span class="file"><b>x</b>la_<b>c</b>ompilation_<b>c</b>ache.cc</span>, <kbd>@</kbd> switches to symbol mode, and <kbd>:c</kbd> selects the <span class="symbol">XlaCompilationCache:<b>:C</b>ompile</span> method.
+            <div class="myCaptions fade">
+                <b>Filtrer dynamiquement vos variants</b>
+                Grâce à des filtres <span class="feature">prédéfinis</span> ou bien, pour les cas complexes, en élaborant vos propres filtres .
             </div>
 
-            <div id="caption3" style="display: none">
-                <b>Navigate source using <span class="feature">Goto Definition</span></b>
-                Here the mouse is hovered over a symbol to jump to the definition. The keyboard shortcut <span class="keys"><b>F12</b></span> can be used when the caret is located on a symbol, or <span class="feature">Goto Symbol in Project</span> can be opened via <span class="keys pc"><b>Ctrl</b><i>+</i><b>Shift</b><i>+</i><b>R</b></span><span class="keys mac"><b>⇧</b><i>+</i><b>⌘</b><i>+</i><b>R</b></span> to jump to the definition of any symbol in the project.
+            <div class="myCaptions fade">
+                <b>Moteur de recherche</b>
+                Accéder rapidement à n'importe quelle données, que ce soit un variant, un gènes, un phénotype, un patient, un panel, une analyse, un rapport, un pipeline, etc...
             </div>
 
-            <div id="caption4" style="display: none">
-                <b>Unsurpassed performance</b>
-                Here a 7MB source code file is opened, and <span class="feature">Goto Symbol</span> <span class="keys pc"><b>Ctrl</b><i>+</i><b>R</b></span><span class="keys mac"><b>⌘</b><i>+</i><b>R</b></span> is used to jump to a function 200k lines down. Full editing features are retained for code in large files, or with complex syntax.
+            <div class="myCaptions fade">
+                <b><span class="feature">Surveiller</span> l'état du serveur et de la base de donnée</b>
+                
             </div>
         </div>
     </section>
@@ -269,20 +259,24 @@ var height = 576
             clearTimeout(slideTimer);
             var i;
             var slides = document.getElementsByClassName("mySlides");
+            var captions = document.getElementsByClassName("myCaptions");
             var dots = document.getElementsByClassName("dot");
             if (n > slides.length) {slideIndex = 1} 
             if (n < 1) {slideIndex = slides.length}
             for (i = 0; i < slides.length; i++) 
             {
                 slides[i].style.display = "none"; 
+                captions[i].style.display = "none"; 
             }
             for (i = 0; i < dots.length; i++) 
             {
                 dots[i].className = dots[i].className.replace(" active", "");
+                captions[i].className = captions[i].className.replace(" active", "");
             }
             slides[slideIndex-1].style.display = "block"; 
+            captions[slideIndex-1].style.display = "block"; 
             dots[slideIndex-1].className += " active";
-            slideTimer = setTimeout(function(){ plusSlides(1); }, 5000);
+            slideTimer = setTimeout(function(){ plusSlides(1); }, 10000);
         }
 
         showSlides(1);
