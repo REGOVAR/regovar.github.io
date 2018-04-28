@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<title>Historique - Regovar</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/feed">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=480, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="../theme/css/regovar.css">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" size="64x64" href="../favicon.ico">
+    <link rel="icon" sizes="192x192" href="../icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="../icon.png">
+    <script type="text/javascript">
+    var plat = 'windows'
+    if (/Mac OS X/.test(navigator.userAgent))
+        plat = 'osx'
+    else if (/Linux|FreeBSD/.test(navigator.userAgent))
+        plat = 'linux'
+    var arch = /WOW64|Win64|x86_64/.test(navigator.userAgent) ? '64' : '32'
+    document.documentElement.className += ' plat_' + plat + ' arch_' + arch
+    function byid(x)
+    {
+        return document.getElementById(x)
+    }
+    var scale = 1
+    function res()
+    {
+        scale = window.devicePixelRatio >= 1.3 && document.body.clientWidth > 1024 ? 2 : 1
+        return scale == 2 ? '@2x' : ''
+    }
+    </script>
+    <!--[if lt IE 9]>
+    <script>
+        var els = ['header', 'nav', 'section', 'main', 'article', 'aside', 'footer']
+        for (var i = 0; i < els.length; ++i)
+            document.createElement(els[i]);
+    </script>
+    <style>
+        header, nav, section, main, article, aside, footer {
+            display: block;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <section>
+            <a id="logo" href="/">
+                <img src="../theme/logo.png" alt="Regovar">
+            </a>
+            <nav>
+                <a href="download.html">Téléchargement</a>
+                <a href="blog.html">Blog</a>
+                <a href="support.html">Support</a>
+                <a href="contribute.html">Contribuer</a>
+                <a href="donate.html">Nous soutenir</a>
+            </nav>
+        </section>
+    </header>
+<main>
+<section>
+
+<h1><span>Historique complet</span></h1>
+
+
+<div class="primary">
+    <section>
+     <ul>
+        <li><b>Avril-mai 2018:</b><br/>Version Beta du logiciel, du <a href="https://github.com/REGOVAR/Regovar/releases/tag/beta1">serveur</a> et du <a href="https://github.com/REGOVAR/QRegovar/releases/tag/beta1">client lourd</a>.</li>
+        <li><b>24-26 janvier 2018:</b><br/>Présentation du projet aux <a href="http://www.assises-genetique.org/fr/" target="_blanck" alt="Site officielle">Assises de génétique humaine et médicale</a> à Nantes.</li>
+        <li><b>Noël 2017:</b><br/>Version Alpha du logiciel (serveur et client lourd).</li>
+        <li><b>XXX:</b><br/>Version Alpha du logiciel (serveur et client lourd).</li>
+        <li><b>7 septembre 2017:</b><br/>Séminaire de Génétique de l'Ouest à Guérande.</li>
+        <li><b>6 juillet 2017:</b><br/>JOBIM à Lille.</li>
+        <li><b>2 février 2017:</b><br/>31ème séminaire de génétique clinique et de conseil génétique à Montpellier.</li>
+        <li><b>XXX:</b><br/>Design graphique du Client lourd.</li>
+        <li><b>Février 2017:</b><br/>Démonstration de la maquette Regovar au CHU d'Angers.</li>
+        <li><b>Janvier 2017:</b><br/>Prototype Annso: le moteur de filtrage dynamique de variant.</li>
+        <li><b>Octobre 2016:</b><br/>Prototype Pirus: le gestionnaire générique de pipeline.</li>
+        <li><b>17 septembre 2016:</b><br/>Séminaire de Génétique de l'Ouest au Croisic.</li>
+        <li><b>Septembre 2016:</b><br/>Etat de l'art.</li>
+        <li><b>1er juin 2016:</b><br/>Olivier Gueudelot rejoint l'équipe du projet en tant qu'ingénieur en informatique.</li>
+    </ul>
+    </section>
+
+</div>
+
+
+</section>
+
+</main>
+    <footer>
+        <section class="hugo">
+            <div style="width: 1200px; margin:auto">
+                <div class="feature odd">
+                    <a href="http://www.girci-go.org/GIRCI_GO/membres.html" class="girci_logo"><span>Girci Grand Ouest</span></a>
+                </div>
+                <div class="feature even">
+                    <a href="http://www.girci-go.org/GIRCI_GO/membres.html" class="hugo_logo"><span>Réseau Hugo</span></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--[if lt IE 9]>
+    <script>
+        var logo_img = byid('logo').getElementsByTagName('IMG')[0]
+        logo_img.src = logo_img.src.replace('.svg', '.png')
+    </script>
+    <![endif]-->
+</body>
+</html>

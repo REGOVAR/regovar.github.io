@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+<title>Actualités - Regovar</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/feed">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=480, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="../theme/css/regovar.css">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" size="64x64" href="../favicon.ico">
+    <link rel="icon" sizes="192x192" href="../icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="../icon.png">
+    <script type="text/javascript">
+    var plat = 'windows'
+    if (/Mac OS X/.test(navigator.userAgent))
+        plat = 'osx'
+    else if (/Linux|FreeBSD/.test(navigator.userAgent))
+        plat = 'linux'
+    var arch = /WOW64|Win64|x86_64/.test(navigator.userAgent) ? '64' : '32'
+    document.documentElement.className += ' plat_' + plat + ' arch_' + arch
+    function byid(x)
+    {
+        return document.getElementById(x)
+    }
+    var scale = 1
+    function res()
+    {
+        scale = window.devicePixelRatio >= 1.3 && document.body.clientWidth > 1024 ? 2 : 1
+        return scale == 2 ? '@2x' : ''
+    }
+    </script>
+    <!--[if lt IE 9]>
+    <script>
+        var els = ['header', 'nav', 'section', 'main', 'article', 'aside', 'footer']
+        for (var i = 0; i < els.length; ++i)
+            document.createElement(els[i]);
+    </script>
+    <style>
+        header, nav, section, main, article, aside, footer {
+            display: block;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <section>
+            <a id="logo" href="/">
+                <img src="../theme/logo.png" alt="Regovar">
+            </a>
+            <nav>
+                <a href="download.html">Téléchargement</a>
+                <a href="blog.html">Blog</a>
+                <a href="support.html">Support</a>
+                <a href="contribute.html">Contribuer</a>
+                <a href="donate.html">Nous soutenir</a>
+            </nav>
+        </section>
+    </header>
+<main>
+<section>
+
+<h1><span>Blog</span></h1>
+
+<div class="primary">
+<section>
+
+<p class="beta">Actualité récente.</p>
+
+<div class="downloads">
+    <ul>
+        <li><b>Avril-Mai 2018:</b><br/>Version Beta du logiciel (<a href="https://github.com/REGOVAR/Regovar/releases/tag/beta1">serveur</a> et <a href="https://github.com/REGOVAR/QRegovar/releases/tag/beta1">client lourd</a>).</li>
+
+        <li><b>24-26 janvier 2018:</b><br/>Présentation du projet aux <a href="http://www.assises-genetique.org/fr/" target="_blanck" alt="Site officielle">Assises de génétique humaine et médicale</a> à Nantes.</li>
+
+        <li><b>Noël 2017:</b><br/>Version Alpha du logiciel (serveur et client lourd).</li>
+
+
+    </ul>
+</div>
+
+<p class="eval">Voir <a href="history.html">l'historique complet</a> des événements</p>
+</section>
+
+<div class="primary">
+    <article class="post">
+        <h2><a href="/blog/articles/the-adaptive-theme">The Adaptive Theme</a></h2>
+        <div class="meta">
+            <span class="date">October 6, 2017</span>
+            <span class="by">by</span>
+            <span class="author">Will Bond</span>
+        </div>
+
+        <div class="content">
+            <p>With the release of Sublime Text 3.0, we refreshed the visual design for the application, icon, and website. The new icon ties into the colors and shapes of the old, but is more abstract and fits well with other modern applications. The updated Default theme is still distinctly Sublime Text, but has full high DPI support, and works well with both dark and light color schemes. The three new color schemes take advantage of the work that has gone into modernizing and enhancing the syntax definitions included with Sublime Text.</p>
+
+            <table style="margin: 20px 0;">
+                <tr>
+                    <th style="color: #777; font-style: italic; padding: 0 20px 12px 0; line-height: 1.2">
+                        <b>Sublime Text 3 Build 3126</b><br>
+                        <span style="font-size: 0.9em">(Old) Default theme, IDLE color scheme</span>
+                    </th>
+                    <th style="color: #777; font-style: italic; line-height: 1.2">
+                        <b>Sublime Text 3.0</b><br>
+                        <span style="font-size: 0.9em">(New) Default theme, Sixteen color scheme</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td style="padding-right: 30px;">
+                        <img src="/screenshots/the_adaptive_theme/3126_default_idle.png" style="width: 250px; max-width: 100%; height: auto;">
+                    </td>
+                    <td>
+                        <img src="/screenshots/the_adaptive_theme/3143_default_sixteen.png" style="width: 250px; max-width: 100%; height: auto;">
+                    </td>
+                </tr>
+            </table>
+
+            <p>As well as an overhaul of the default theme, we've also include a new theme, Adaptive, which uses the colors of your color scheme and applies variations of them to the side bar and various panels. The new color scheme setting <code>accent</code> is used to highlight selected options in the find panel, and to highlight modified tabs. Furthermore, on recent versions of macOS the title bar is also styled by the Adaptive theme to follow your selected color scheme.</p>
+
+            <p>The result is a theme that acts as if it was custom designed for your color scheme. Check out this sample of Adaptive in action:</p>
+
+
+
+
+            <p>To try Adaptive out for yourself, open the <span class="feature">Command Palette</span> and type <kbd>Select Theme</kbd>. Once you've picked <em>Adaptive</em>, use the <kbd>Select Color Scheme</kbd> command to preview the available color schemes.</p>
+
+            <p>Probably the best part is that all of the power of the Adaptive theme is available for any theme to use. Additionally, we wrote up <a href="/docs/3/themes.html">full documentation</a> about all of the theme engine features and syntax. Having comprehensive documentation will hopefully make theming accessible to a much wider audience. If you are looking for help in customizing a theme, or creating your own, drop by the <a href="https://forum.sublimetext.com/">forum</a> or ask some questions on the <a href="https://discord.gg/HcmwdVK">Discord server</a>.</p>
+
+        </div>
+    </article>
+    <article class="post">
+        <h2><a href="/blog/articles/sublime-text-3-build-3124">Sublime Text 3 Build 3124</a></h2>
+        <div class="meta">
+            <span class="date">September 22, 2016</span>
+            <span class="by">by</span>
+            <span class="author">Jon Skinner</span>
+        </div>
+        <div class="content">
+            <p>Sublime Text 3, Build 3124, is out now. Downloads and the full changelog are on the <a href="/3">Sublime Text 3</a> page.
+
+<p>Build errors are now shown inline, at the location the error occurred. This is done via the new <a href="/docs/3/api_reference.html#sublime.Phantom">Phantoms</a> API, which allows HTML annotations to be added to the text buffer by plugins:</p>
+
+<p><img src="/blog/images/build_error.png" width=527 height=192><p>
+
+<p>Inline build errors can be disabled via the <i>show_errors_inline</i> setting.</p>
+
+<p>Also new in 3124 is Show Definition, which will show where a symbol is defined when hovering over it with the mouse. This makes use of the new <a href="/docs/3/api_reference.html#sublime_plugin.EventListener">on_hover</a> API, and can be controlled via the <i>show_definitions</i> setting:
+
+<p><img src="/blog/images/definition.png" width=527 height=206><p>
+
+<p>After navigating to a definition, you can go back to where you were via the <i>Goto/Jump Back</i> command.</p>
+
+<p>3124 also features side-by-side preferences editing, a menu entry to install <a href="https://packagecontrol.io/">Package Control</a>, performance improvements, a whole host of <a href="https://github.com/sublimehq/Packages">Syntax Highlighting</a> improvements, <a href="/docs/3/minihtml.html">minihtml</a> improvements, and expanded <a href="/docs/3/api_reference.html">API Documentation</a>.
+
+<p>With these latest changes, Sublime Text 3 is almost ready to graduate out of beta, and into a 3.0 version. If you want to track the progress between now and then, the <a href="/3dev">Dev Builds</a> are the way to go. As usual, if you have any questions or comments, please head over to the <a href="https://forum.sublimetext.com">forum</a>.</p>
+
+        </div>
+    </article>
+    <article class="post">
+        <h2><a href="/blog/articles/sublime-text-3-build-3103">Sublime Text 3 Build 3103</a></h2>
+        <div class="meta">
+            <span class="date">February 9, 2016</span>
+            <span class="by">by</span>
+            <span class="author">Jon Skinner</span>
+        </div>
+        <div class="content">
+            <p>Build 3103 is out now. Downloads and a full changelog are on the <a href="/3">Sublime Text 3</a> page.
+
+<p>This is the first build available to everyone with the new syntax definition format, <a href="/docs/3/syntax.html">.sublime-syntax</a>. This allows for richer syntax highlighting and better performance. 3103 also features a custom regex engine that significantly speeds up file loading and indexing.</p>
+
+<p>The Packages shipped with Sublime Text are now on <a href="https://github.com/sublimehq/Packages">GitHub</a>, and 3103 incorporates many community provided improvements to them, especially to HTML, CSS and JS.</p>
+
+<p>I'd also like to welcome prominent community member and <a href="https://packagecontrol.io/">Package Control</a> mastermind Will Bond to the Sublime HQ team.</p>
+
+<p>If you have any questions or comments about 3103, you may want to head over to the new <a href="https://forum.sublimetext.com">Forum</a>.</p>
+
+        </div>
+    </article>
+    <article class="post">
+        <h2><a href="/blog/articles/file-indexing">Sublime Text 3 File Indexing</a></h2>
+        <div class="meta">
+            <span class="date">March 25, 2015</span>
+            <span class="by">by</span>
+            <span class="author">Jon Skinner</span>
+        </div>
+        <div class="content">
+            <p>Some of the core features in Sublime Text 3 are <i>Goto Definition</i> and <i>Goto Symbol in Project</i>. Both of these work by indexing the files in the current project to determine where each symbol is defined.
+
+<p>When indexing is in progress, several low priority background processes will be launched to do the work, and a progress indicator will be shown on the status bar. In general, even for large projects, indexing should take only a few seconds, and be unobtrusive.
+
+<p>However, things can go wrong, so if you're seeing high CPU usage in Sublime Text 3, then file indexing is the first thing to look at. There are two things that can cause excess CPU usage from the indexing:
+
+<ul>
+    <li>A corrupted index. Various events can cause the index itself to become corrupted, and when this happens, Sublime Text will do the indexing work, but be unable to write the results to disk, so it'll start again in the near future. The next build of Sublime Text will handle this situation more gracefully, but in the mean time you can check this for yourself: if the index is corrupted, there will be a log message in the console (accessible from the <i>View/Show Console</i> menu), which indicates which directory needs to be deleted to reset the index.
+    </li>
+
+    <li>Some files. File indexing works by applying syntax highlighting rules to each file, and then extracting everything that looks like a symbol. The syntax highlighting rules are regex based, and some combinations of rules and files can cause the parsing to take a long time. See below to find out what's going on, and then consider adding the files to the <tt>index_exclude_patterns</tt> setting.</li>
+</ul>
+
+<p>To see when files are being indexed, you can enter <tt>sublime.log_indexing(True)</tt> in Sublime Text's console. This will trigger Sublime Text to start logging relevant information whenever it indexes files.</p>
+
+<p>To disable file indexing altogether, you can set the <tt>index_files</tt> setting to <tt>false</tt>.
+
+        </div>
+    </article>
+    <article class="post">
+        <h2><a href="/blog/articles/sublime-text-3-build-3080">Sublime Text 3 Build 3080</a></h2>
+        <div class="meta">
+            <span class="date">March 24, 2015</span>
+            <span class="by">by</span>
+            <span class="author">Jon Skinner</span>
+        </div>
+        <div class="content">
+            <p>Build 3080 is now available, with many fixes, improvements and new features. Full details, and downloads, are on the <a href="/3">Sublime Text 3</a> page.
+
+<p>Sublime Text 3, while still technically in beta, is the recommended version of Sublime Text to use: compared to Sublime Text 2, it's faster, more polished, and of course, has a lot of extra functionality. <a href="/3">Download</a> it now and give it a try!
+
+<p>There will be more Sublime Text 3 builds coming in the near future. If you're a registered user, you can get early access by using one of the <a href="/3dev">Dev Builds</a>. New dev builds are announced and discussed on the <a href="https://forum.sublimetext.com">Forum</a> - there's generally a new one each week.
+
+        </div>
+    </article>
+    <article class="post">
+        <h2><a href="/blog/articles/sublime-text-3-build-3064">Sublime Text 3 Build 3065</a></h2>
+        <div class="meta">
+            <span class="date">August 27, 2014</span>
+            <span class="by">by</span>
+            <span class="author">Jon Skinner</span>
+        </div>
+        <div class="content">
+            <p>Build 3065 is now available. Full details, and downloads, are on the <a href="/3">Sublime Text 3</a> page.
+
+        </div>
+    </article>
+    <article class="post">
+        <h2><a href="/blog/articles/sublime-text-3-build-3059">Sublime Text 3 Build 3059</a></h2>
+        <div class="meta">
+            <span class="date">December 18, 2013</span>
+            <span class="by">by</span>
+            <span class="author">Jon Skinner</span>
+        </div>
+        <div class="content">
+            <p>Build 3059 is now available. Full details, and downloads, are on the <a href="/3">Sublime Text 3</a> page.
+
+        </div>
+    </article>
+    <article class="post">
+        <h2><a href="/blog/articles/sublime-text-3-public-beta">Sublime Text 3 Public Beta</a></h2>
+        <div class="meta">
+            <span class="date">June 28, 2013</span>
+            <span class="by">by</span>
+            <span class="author">Jon Skinner</span>
+        </div>
+        <div class="content">
+            <p><a href="/3">Build 3047</a> is now available to both registered users and the general public. Build 3047 is the fastest, most stable, most polished version of Sublime Text yet.
+
+<p>New in 3047 is High DPI support for Windows and Linux, as well as improved file change detection, smarter atomic save, improved rendering performance and many bug fixes. The full list of changes is on the <a href="/3">Sublime Text 3</a> page.
+
+<p>If you're coming from Sublime Text 2, some of the core features in Sublime Text 3 are:
+
+<ul>
+    <li>Speed. Startup time, file load time, and <i>Replace All</i> have all been significantly improved. If you're using OS X with a Retina display, then you'll find huge rendering speed improvements too.
+
+    <li>Symbol Indexing, for <i>Goto Definition</i> and <i>Goto Symbol in Project</i>. Complementing these are the <i>Jump Forward</i> and <i>Jump Back</i> features.
+
+    <li>Improved HTML Editing, including tag and attribute completion as well as automatic tag closing.
+
+    <li>Improved Project and Pane management, including multiple workspaces for a single project.
+
+    <li>Richer API. Plugins are better insulated from the application, and now have a broader and fully threadsafe API to work with.
+</ul>
+
+<p>There's been hundreds of smaller improvements to almost every aspect. There's some more details in the original <a href="/blog/articles/sublime-text-3-beta">announcement</a>.
+
+<p>You can download Build 3047, as well as see a full list of changes, at the <a href="/3">Sublime Text 3</a> page.
+
+        </div>
+    </article>
+    <article class="post">
+        <h2><a href="/blog/articles/sublime-text-3-beta-3033">Sublime Text 3 Beta 3033</a></h2>
+        <div class="meta">
+            <span class="date">May 10, 2013</span>
+            <span class="by">by</span>
+            <span class="author">Jon Skinner</span>
+        </div>
+        <div class="content">
+            <p>Build 3033 is now available for registered users. The focus for 3033 has been on general polish, and cleaning up a few loose ends. It shouldn't be too long now until the first public beta for Sublime Text 3.
+
+<p>The full list of changes is available on the <a href="/3">Sublime Text 3</a> page.
+
+        </div>
+    </article>
+
+
+<div class="blog_nav">
+
+
+<a href="/blog/page/2" class="blog_nav right">Older Posts<img src="/images/right.svg" alt="▶"></a>
+
+</div>
+
+
+</div>
+
+<aside>
+    <section class="archives">
+    <h3>Articles</h3>
+    <ul>
+    <li><a href="#" title="October 2017">October 2017</a></li>
+    <li><a href="#" title="17/09/2016">Septembre 2016</a></li>
+    </ul>
+    </li>
+    </section>
+
+    <section class="about">
+    <h3>About</h3>
+    <p>
+        Sublime HQ Pty Ltd<br>
+        Sydney, Australia<br>
+        Twitter: <a href="https://twitter.com/sublimehq">@sublimehq</a>
+    </p>
+    </section>
+</aside>
+
+</section>
+
+</main>
+    <footer>
+        <section class="hugo">
+            <div style="width: 1200px; margin:auto">
+                <div class="feature odd">
+                    <a href="http://www.girci-go.org/GIRCI_GO/membres.html" class="girci_logo"><span>Girci Grand Ouest</span></a>
+                </div>
+                <div class="feature even">
+                    <a href="http://www.girci-go.org/GIRCI_GO/membres.html" class="hugo_logo"><span>Réseau Hugo</span></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--[if lt IE 9]>
+    <script>
+        var logo_img = byid('logo').getElementsByTagName('IMG')[0]
+        logo_img.src = logo_img.src.replace('.svg', '.png')
+    </script>
+    <![endif]-->
+</body>
+</html>

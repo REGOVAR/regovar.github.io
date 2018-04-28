@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<title>Contribuer - Regovar</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/feed">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=480, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="../theme/css/regovar.css">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" size="64x64" href="../favicon.ico">
+    <link rel="icon" sizes="192x192" href="../icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="../icon.png">
+    <script type="text/javascript">
+    var plat = 'windows'
+    if (/Mac OS X/.test(navigator.userAgent))
+        plat = 'osx'
+    else if (/Linux|FreeBSD/.test(navigator.userAgent))
+        plat = 'linux'
+    var arch = /WOW64|Win64|x86_64/.test(navigator.userAgent) ? '64' : '32'
+    document.documentElement.className += ' plat_' + plat + ' arch_' + arch
+    function byid(x)
+    {
+        return document.getElementById(x)
+    }
+    var scale = 1
+    function res()
+    {
+        scale = window.devicePixelRatio >= 1.3 && document.body.clientWidth > 1024 ? 2 : 1
+        return scale == 2 ? '@2x' : ''
+    }
+    </script>
+    <!--[if lt IE 9]>
+    <script>
+        var els = ['header', 'nav', 'section', 'main', 'article', 'aside', 'footer']
+        for (var i = 0; i < els.length; ++i)
+            document.createElement(els[i]);
+    </script>
+    <style>
+        header, nav, section, main, article, aside, footer {
+            display: block;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <section>
+            <a id="logo" href="/">
+                <img src="../theme/logo.png" alt="Regovar">
+            </a>
+            <nav>
+                <a href="download.html">Téléchargement</a>
+                <a href="blog.html">Blog</a>
+                <a href="support.html">Support</a>
+                <a href="contribute.html">Contribuer</a>
+                <a href="donate.html">Nous soutenir</a>
+            </nav>
+        </section>
+    </header>
+<main>
+<section>
+
+<h1><span>Contribuer</span></h1>
+
+<section>
+<p>
+    Vous êtes sur la bonne page! Regovar est un projet libre et ouvert, où tout le monde peut participer. Peut importe vos compétences, toute aide est la bienvenue. Pour vous donner une idée, voici une liste non exhaustive de l'aide que vous pouvez apporter:
+    <ul>
+        <li>Tester l'application;</li>
+        <li>Nous dire ce que vous en pensez;</li>
+        <li>Proposer vos idées;</li>
+        <li>Indiquer les bugs ou difficultés que vous rencontrez;</li>
+        <li>Améliorer les traductions (français/anglais);</li>
+        <li>Participer au développement;</li>
+        <li>Partager vos pipelines</li>
+        <li>Aider à maintenir la doc ou le site web à jour</li>
+        <li>etc.</li>
+    </ul>
+</p>
+<p>
+    Si vous êtes intéressé, voici une rapide présentation des principaux outils que nous utilisons pour travailler ensemble:
+    <ul>
+        <li><a href="https://github.com/REGOVAR">github</a> : pour le partage et le versionnage du code source ainsi que la gestion des tickets;</li>
+        <li><a href="https://readthedocs.org/projects/regovar/">readthedoc</a> : pour gérer la documentation en ligne du projet;</li>
+        <li>Téléphone, mail ou <a href="https://discordapp.com/channels/364455513724944384/364455513724944386">discord</a> : pour discuter.</li>
+    </ul>
+</p>
+</section>
+
+<section>
+
+
+
+
+<h2>Documentation technique (Serveur)</h2>
+<ul>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/good_practices/">Bonnes pratiques</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/architecture/">Architecture</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/database/">Base de donnée</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/core/">Le core</a> </li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/modules/">Modules et extensions</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/pirus/">Pirus (Docker/LXD)</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/rest/">API REST</a> - <a href="http://test.regovar.org/api">Tester en ligne sur le serveur de test</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/cli/">API CLI</a> </li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/authentication/">Authentification</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/errors/">Gestion des erreurs</a> </li>
+</ul>
+</section>
+
+<section>
+<h2>Documentation technique (Client lourd)</h2>
+<ul>
+    <li><a href="http://qregovar.readthedocs.io/fr/latest/developper/good_practices/">Bonnes pratiques</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/architecture/">Architecture</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/model/">Le Model</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/ui/">L'interface (IHM)</a> </li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/usersettings/">Paramètres utilisateurs</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/authentication/">Authentification</a></li>
+    <li><a href="http://regovar.readthedocs.io/fr/latest/developper/errors/">Gestion des erreurs</a> </li>
+    <li>Fiche techniques:
+        <ul>
+            <li><a href="http://regovar.readthedocs.io/fr/latest/tech/request/">Les requêtes web (asynchrone et temps réel)</a></li>
+            <li><a href="http://regovar.readthedocs.io/fr/latest/tech/file/">Gestion des fichiers</a></li>
+            <li><a href="http://regovar.readthedocs.io/fr/latest/tech/theme/">QML et thème graphique</a></li>
+        </ul>
+    </li>
+</ul>
+</section>
+
+</main>
+    <footer>
+        <section class="hugo">
+            <div style="width: 1200px; margin:auto">
+                <div class="feature odd">
+                    <a href="http://www.girci-go.org/GIRCI_GO/membres.html" class="girci_logo"><span>Girci Grand Ouest</span></a>
+                </div>
+                <div class="feature even">
+                    <a href="http://www.girci-go.org/GIRCI_GO/membres.html" class="hugo_logo"><span>Réseau Hugo</span></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--[if lt IE 9]>
+    <script>
+        var logo_img = byid('logo').getElementsByTagName('IMG')[0]
+        logo_img.src = logo_img.src.replace('.svg', '.png')
+    </script>
+    <![endif]-->
+</body>
+</html>

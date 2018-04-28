@@ -1,77 +1,294 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!doctype html>
+<html>
 <head>
-    <meta http-equiv="refresh" content="0; url=fr/index.html" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Language" content="en" />
+<title>Regovar</title>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/feed">
+<meta name="description" content="Regovar est un logiciel d'analyse de données génétiques libre et ouvert, financé par les CHU du Grand-Ouest.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=480, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="theme/css/regovar.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" size="64x64" href="favicon.ico">
+    <link rel="icon" sizes="192x192" href="icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="icon.png">
+    <script type="text/javascript">
+        var plat = 'windows'
+        if (/Mac OS X/.test(navigator.userAgent))
+            plat = 'osx'
+        else if (/Linux|FreeBSD/.test(navigator.userAgent))
+            plat = 'linux'
+        var arch = /WOW64|Win64|x86_64/.test(navigator.userAgent) ? '64' : '32'
+        document.documentElement.className += ' plat_' + plat + ' arch_' + arch
+        function byid(x)
+        {
+            return document.getElementById(x)
+        }
+        var scale = 1
+        function res()
+        {
+            scale = window.devicePixelRatio >= 1.3 && document.body.clientWidth > 1024 ? 2 : 1
+            return scale == 2 ? '@2x' : ''
+        }
 
-
-    <title>Regovar</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="theme/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="theme/css/freelancer.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <script src="https://use.fontawesome.com/61c1c8370d.js"></script>
-    <link href="theme/css/css" rel="stylesheet" type="text/css">
+    </script>
+    <!--[if lt IE 9]>
+    <script>
+        var els = ['header', 'nav', 'section', 'main', 'article', 'aside', 'footer']
+        for (var i = 0; i < els.length; ++i)
+            document.createElement(els[i]);
+    </script>
+    <style>
+        header, nav, section, main, article, aside, footer {
+            display: block;
+        }
+    </style>
+    <![endif]-->
 </head>
-
 <body>
-
-    <header style="position: relative">
-        <img id="banner_img" class="img-responsive" src="theme/banner.svg" alt="" style="box-shadow: 0 5px 5px rgba(0,0,0,0.33); margin-top:-100px;"/>
-        <p style="font-size: 30px; font-style: italic; position: absolute; right: 50px; bottom: 50px; margin: 0;">
-            <i class="fa fa-quote-left" aria-hidden="true" style="color: rgba(255,255,255,0.75); font-size: 20px"></i>
-            L'analyse NGS libre et open-source
-            <i class="fa fa-quote-right" aria-hidden="true" style="color: rgba(255,255,255,0.75); font-size: 20px"></i></p>
+    <header>
+        <section>
+            <a id="logo" href="/">
+                <img src="theme/logo.png" alt="Regovar">
+            </a>
+            <nav>
+                <a href="fr/download.html">Téléchargement</a>
+                <a href="fr/blog.html">Blog</a>
+                <a href="fr/support.html">Support</a>
+                <a href="fr/contribute.html">Contribuer</a>
+                <a href="fr/donate.html">Nous soutenir</a>
+            </nav>
+        </section>
     </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 style="margin: 50px;">Choose your language</h1>
-                <a href="fr/index.html"><img src="theme/fr.png"/></a>
-                <span style="display:inline-block; width:50px;"></span>
-                <a href="en/index.html"><img src="theme/en.png"/></a>
+<script>
+var width = 1200
+var height = 576
+</script>
+<div id="masthead">
+    <section>
+        <div class="tagline"><span>L'analyse NGS libre et open-source</span></div>
+    </section>
+    *
+
+    <div class="download">
+        <div class="current_version">
+            <span class=""><a href="https://download.sublimetext.com/Sublime Text Build 3143 Setup.exe">Installer le serveur</a></span>
+        </div>
+
+        <div class="button">
+            <span class="win show_32"><a href="https://download.sublimetext.com/Sublime Text Build 3143 Setup.exe">Télécharger pour Windows</a></span>
+            <span class="win show_64"><a href="https://download.sublimetext.com/Sublime Text Build 3143 x64 Setup.exe">Télécharger pour Windows</a></span>
+            <span class="linux"><a href="/docs/3/linux_repositories.html">Télécharger pour Linux</a></span>
+            <span class="mac"><a href="https://download.sublimetext.com/Sublime Text Build 3143.dmg">Télécharger pour Mac</a></span>
+        </div>
+<!--         <div class="current_version">Regovar server <i>(Beta 1)</i></div>
+        <div class="changelog"><a href="/3">Changelog</a></div> -->
+    </div>
+    <section id="slideshow" class="slideshow">       
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+                <img src="fr/img/slide-1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="fr/img/slide-2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="fr/img/slide-3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="fr/img/slide-4.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+             -->
+        </div>
+    </section>
+</div>
+<main>
+    <section class="screencast-meta">
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        <div class="captions">
+            <div class="myCaptions fade">
+                <b>Une interface <span class="feature">simple et moderne</span></b> qui permet de voir en un coup d'oeil les dernières analyses réalisées, ainsi que 
+                les dernières fiches patient modifiées. Une barre de recherche 
+            </div>
+
+            <div class="myCaptions fade">
+                <b>Filtrer dynamiquement vos variants</b>
+                Grâce à des filtres <span class="feature">prédéfinis</span> ou bien, pour les cas complexes, en élaborant vos propres filtres .
+            </div>
+
+            <div class="myCaptions fade">
+                <b>Moteur de recherche</b>
+                Accéder rapidement à n'importe quelle données, que ce soit un variant, un gènes, un phénotype, un patient, un panel, une analyse, un rapport, un pipeline, etc...
+            </div>
+
+            <div class="myCaptions fade">
+                <b><span class="feature">Surveiller</span> l'état du serveur et de la base de donnée</b>
+                
             </div>
         </div>
-    </div>
+    </section>
+    
 
-    <!-- Footer -->
-    <footer class="text-center" style="position:absolute; bottom: 0; left:0; right:0;">
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Regovar team, 2014-2018
-                    </div>
+
+    <section>
+        <h2 class="love"><span>Quelques points clés</span></h2>
+
+        <div class="feature odd">
+            <h3>PHRCI Grand Ouest</h3>
+            <p>Regovar est un projet de recherche financé par les <a href="http://www.girci-go.org/GIRCI_GO/membres.html" target="_blanck">CHU du réseau HUGO</a>.
+               Il vise à développer un logiciel d'analyse de données de séquençage haut débit, depuis la récupération des fichiers produits par les séquenceurs, jusqu'à 
+               la génération de rapports, de comptes-rendus d'analyse en passant par les contrôles de qualité, la détection, l'annotation, le filtrage, la priorisation
+               et la visualisation de variants.</p>
+        </div>
+
+        <div class="feature even">
+            <h3>Libre et open-source</h3>
+            <p>Pas de contraintes contractuelles ni budgétaires. Regovar est un logiciel libre (sous license 
+                <a href="https://github.com/REGOVAR/Regovar/blob/master/LICENSE" target="_blanck">AGPL3</a>) 
+                et gratuit, tout comme les technologies sur lesquelles il se base.</p>
+            <p>Rejoignez les sept CHU impliqués dans ce projet collaboratif sans limites institutionnelles ou géographique </p>
+        </div>
+
+        <div class="feature odd">
+            <h3>Panel, exome, génome</h3>
+            <p>...</p>
+        </div>
+
+        <div class="feature even">
+            <h3>Diagnostic et recherche</h3>
+            <p>...</p>
+        </div>
+
+        <div class="feature odd">
+            <h3>Simple et moderne</h3>
+            <p>L'interface ergonomique s'adresse à la fois aux cliniciens, biologistes et bioinformaticiens. </p>
+        </div>
+
+        <div class="feature even">
+            <h3>Moteur de recherche conviviale</h3>
+            <p>Recherchez à la fois parmi vos données locales, celles d'OMIM, de Human Phenotype Ontology, de PubMed, etc. 
+               Accèdez rapidement aux outils en lignes tel que Varsome.</p>
+        </div>
+
+        <div class="feature odd">
+            <h3>Base de donnée</h3>
+            <p>Sauvegardez vos données NGS et vos annotations dans une base de données locale et sécurisée.</p>
+        </div>
+
+        <div class="feature even">
+            <h3>Pipelines</h3>
+            <p>Créez vos pipelines ou utilisez ceux déjà disponibles.</p>
+        </div>
+
+        <div class="feature odd">
+            <h3>Partage</h3>
+            <p>Partagez si vous le désirez vos pipelines, vos filtres de variant, vos panels ainsi que vos annotations et statistiques sur les variants.</p>
+        </div>
+
+        <div class="feature even">
+            <h3>Technologies fiables et modernes</h3>
+            <p>Python, PostgresQL, Docker, ...</p>
+        </div>
+
+        <div class="feature odd">
+            <h3>Performance</h3>
+            <p>Architecture client serveur ...</p>
+        </div>
+
+        <div class="feature even">
+            <h3>Multi plateformes</h3>
+            <p>API REST, Client lourd Compatible Linux/Windows/Mac.</p>
+        </div>
+    </section>
+</main>
+    <footer>
+        <section class="partners">
+            <img src="theme/logo_chu_angers.png" alt="CHU d'Angers" height="70px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_univ_Angers.png" alt="Université d'Angers " height="70px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHRU_Brest.jpg" alt="CHU de Brest" height="70px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Nancy.png" alt="CHU de Nancy" height="70px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Nantes.png" alt="CHU de Nantes" height="70px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Poitiers.jpg" alt="CHU de Poitiers" height="70px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Rennes.jpg" alt="CHU de Rennes" height="70px"/> &nbsp; &nbsp; &nbsp; 
+            <img src="theme/logo_CHU_Tours.jpg" alt="CHU de Tours" height="70px"/>
+
+        </section>
+        <section class="hugo">
+            <div style="width: 1200px; margin:auto">
+                <div class="feature odd">
+                    <a href="http://www.girci-go.org/GIRCI_GO/membres.html" class="girci_logo"><span>Girci Grand Ouest</span></a>
+                </div>
+                <div class="feature even">
+                    <a href="http://www.girci-go.org/GIRCI_GO/membres.html" class="hugo_logo"><span>Réseau Hugo</span></a>
                 </div>
             </div>
-        </div>
+        </section>
     </footer>
-
-    <!-- Matomo -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(["setCookieDomain", "*.regovar.org"]);
-      _paq.push(["setDomains", ["*.regovar.org","*.secure.regovar.org","*.regovar.org","*.secure.regovar.org"]]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-      var u="//analytics.arkanosis.net/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', '10']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
+    <!--[if lt IE 9]>
+    <script>
+        var logo_img = byid('logo').getElementsByTagName('IMG')[0]
+        logo_img.src = logo_img.src.replace('.svg', '.png')
     </script>
-    <noscript><p><img src="//analytics.arkanosis.net/piwik.php?idsite=10&rec=1" style="border:0;" alt="" /></p></noscript>
-    <!-- End Matomo Code -->
+    <![endif]-->
 
+    <script type="text/javascript">
+        var slideIndex = 1;
+        var slideTimer;
+
+        // Next/previous controls
+        function plusSlides(n) 
+        {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) 
+        {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) 
+        {
+            clearTimeout(slideTimer);
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var captions = document.getElementsByClassName("myCaptions");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) 
+            {
+                slides[i].style.display = "none"; 
+                captions[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) 
+            {
+                dots[i].className = dots[i].className.replace(" active", "");
+                captions[i].className = captions[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block"; 
+            captions[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+            slideTimer = setTimeout(function(){ plusSlides(1); }, 10000);
+        }
+
+        showSlides(1);
+
+
+    </script>
 </body>
 </html>
