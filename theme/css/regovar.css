@@ -570,7 +570,7 @@ div#masthead section div.tagline
 }
 div#masthead section div.tagline span
 {
-    padding: 0 50px 5px;
+    padding: 5px 50px;
     background-color: rgba(0, 0, 0, 0.1);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
