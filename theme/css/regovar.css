@@ -212,10 +212,6 @@ main > section
 main > section
 {
     width: 1140px;
-    background-image: url(/images/icon_grey_top.svg);
-    background-repeat: no-repeat;
-    background-position: right 32px bottom 0;
-    background-size: 256px auto;
     min-height: 350px;
     padding-bottom: 100px;
 }
