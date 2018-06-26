@@ -688,6 +688,7 @@ div.download div
 div.download .button
 {
     padding-left: 20px;
+    line-height: normal;
 }
 
 div.download .button span
